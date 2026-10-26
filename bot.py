@@ -1,5 +1,13 @@
 import logging
 import logging.config
+import asyncio
+import threading
+
+# Python 3.12+ மற்றும் Pyrogram இணக்கத்தன்மை பிழையை சரிசெய்ய
+try:
+    asyncio.get_event_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
 
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
