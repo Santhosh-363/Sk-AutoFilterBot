@@ -1,7 +1,7 @@
 pyrogram>=2.0.30
 tgcrypto
-pymongo[srv]>=3.12.3
-motor>=2.5.1
+pymongo[srv]==3.12.3
+motor==2.5.1
 marshmallow>=3.20.0
 umongo>=3.1.0
 requests
@@ -9,3 +9,4 @@ bs4
 imdbpy>=2021.4.18
 aiohttp
 setuptools
+certifi
